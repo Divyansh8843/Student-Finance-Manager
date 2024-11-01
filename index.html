@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Finance Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <header>
+        <h1>💸 Student Finance Manager</h1>
+        <p>Manage your finances effortlessly</p>
+    </header>
+
+
+    <main>
+        
+        <div class="card budget-card">
+            <h2>Monthly Budget</h2>
+            <div class="input-group">
+                <input type="number" id="budget-input" placeholder="Set your budget">
+                <button onclick="setBudget()">Set</button>
+            </div>
+            <p id="budget-display">Budget: $0</p>
+        </div>
+
+        
+        <div class="card expenses-card">
+            <h2>Expenses</h2>
+            <div class="input-group">
+                <input type="text" id="expense-name" placeholder="Expense name">
+                <input type="number" id="expense-amount" placeholder="Amount">
+                <button onclick="addExpense()">Add</button>
+            </div>
+            <div class="expense-list" id="expense-list"></div>
+            <p id="total-expenses">Total Expenses: $0</p>
+        </div>
+
+        
+        <div class="card savings-card">
+            <h2>Savings Goal</h2>
+            <div class="input-group">
+                <input type="number" id="savings-goal" placeholder="Set savings goal">
+                <button onclick="setSavingsGoal()">Set</button>
+            </div>
+            <p id="savings-progress">Goal: $0</p>
+        </div>
+    </main>
+
+    
+    <footer>
+        <p>Developed by Team - Code Champ</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
